@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Jeffrey Li - Main Page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8" />
-    <meta name="description" content="Personal Website" />
-    <meta name="keywords" content="Jeffrey,Li" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="author" content="Jeffrey Li">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My personal site!">
+
+    <link rel="icon" href="favicon.ico">
+    <title>Jeffrey Li</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-image: url("img/toronto_background.jpg");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    </style>
   </head>
 
-  <body>
-    <main>
-      
-    <div id="bio">
-    	<img src="img/CN_Tower.jpg" alt="Photo" border="0" height="300px">
-    	<div id="bio-desc">
-    		<h1>Welcome to my Personal Site!</h1>
-    		<p>Hi, I'm Jeffrey Li. I am a first year computer science student at
-          the University of Toronto, working towards a Bachelors in Science.</p>
-    		<p>I have been passionate about computer science and mathematics since
-          high school. I have participated in various math competitions and
-          coding challenges, such as the ORBIS Challenge.</p>
-    		<p>I am knowledgable in Python, Java, HTML5, CSS3, C, C++, and C#. I
-          have worked with the Bash shell and the Microsoft PowerShell.
-          I am also into using multimedia software, such as Sony Vegas Pro,
-          Adobe Photoshop, and Audacity.</p>
-    		<p>I am a member of CSEC, a student-run club at the University of
-          Toronto, centered around computer science. In my spare time, I
-          sometimes edit gaming wikis, or do challenges on Kattis or WeChall.</p>
-    	</div>
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="width:100%;">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Jeffrey Li</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading" style="font-size:64px;">Jeffrey Li</h1>
+        <div id="random_quote"></div>
+        <hr id="animate_hr" style="width:0%; border-top: 2px solid #999;">
+        <ul class="list-inline">
+          <li>About Me</li>
+          <li>Projects 'n Fancy Stuff</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Social media icons will go under here :D</p>
+        </div>
+      </footer>
     </div>
 
-    </main>
-
-    <footer>
-
-      <div id="links">
-        <ul>
-          <li><a href="https://www.facebook.com/jeffreylyj98"><img src="img/Facebook.png" alt="Facebook" border="0" style="width:50px;"></a></li>
-          <li><a href="https://www.linkedin.com/in/jeffrey-li-76848a128/"><img src="img/Linkedin.png" alt="Linkedin" border="0" style="width:50px;"></a></li>
-          <li><a href="https://github.com/privatejfx141"><img src="img/Github.png" alt="GitHub" border="0" style="width:50px;"></a></li>
-          <li><a href="https://twitter.com/regedit86x/"><img src="img/Twitter.png" alt="Twitter" border="0" style="width:50px;"></a></li>
-        </ul>
-      </div>
-
-      Copyright Jeffrey Li 2017
-    </footer>
-
+    <script src="js/animate_hr.js"></script>
+    <script src="js/random_quote.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  
   </body>
 </html>
