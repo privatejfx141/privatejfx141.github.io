@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
 
+    <!-- Custom characters for social media links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
     <style>
       body {
         background-image: url("img/toronto_background.jpg");
@@ -33,13 +36,14 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="width:100%;">
       <header class="masthead mb-auto">
         <div class="inner">
+          <img src="img/gol_glider_full.png" class="masthead-logo"></img>
           <h3 class="masthead-brand">Jeffrey Li</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Resume</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </nav>
         </div>
       </header>
@@ -49,16 +53,23 @@
         <div id="random_quote"></div>
         <hr id="animate_hr" style="width:0%; border-top: 2px solid #999;">
         <ul class="list-inline">
-          <li>About Me</li>
-          <li>Projects 'n Fancy Stuff</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects 'n Fancy Stuff</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Social media icons will go under here :D</p>
+          <ul class="list-inline">
+            <li><a class="icon-social-facebook" href="https://www.facebook.com/jeffreylyj98/"></a></li>
+            <li><a class="icon-social-github" href="https://github.com/privatejfx141/"></a></li>
+            <li><a class="icon-social-google" href="https://plus.google.com/110975621771482109077"></a></li>
+            <li><a class="icon-social-linkedin" href="https://www.linkedin.com/in/jeffreylyj98"></a></li>
+            <li><a class="icon-social-steam" href="http://steamcommunity.com/id/jfx/"></a></li>
+            <li><a class="icon-social-youtube" href="https://www.youtube.com/user/privatejfx1412/"></a></li>
+          </ul>
         </div>
       </footer>
     </div>
@@ -70,6 +81,6 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
-  
+
   </body>
 </html>

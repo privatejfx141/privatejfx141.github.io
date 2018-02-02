@@ -38,12 +38,12 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .8);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .8);
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 64em;
 }
 
 
@@ -55,6 +55,12 @@ body {
 }
 
 .masthead-brand {
+  margin-bottom: 0;
+}
+
+.masthead-logo {
+  width: 36px;
+  margin-right: 0.5em;
   margin-bottom: 0;
 }
 
@@ -84,11 +90,23 @@ body {
   .masthead-brand {
     float: left;
   }
+  .masthead-logo {
+    float: left;
+  }
   .nav-masthead {
     float: right;
   }
 }
 
+@media (max-width: 48em) {
+  .masthead-brand {
+    display: none;
+  }
+  .masthead-logo {
+    float: center;
+    margin: 0;
+  }
+}
 
 /*
  * Cover
