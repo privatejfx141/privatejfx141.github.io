@@ -47,10 +47,19 @@ body {
   max-width: 64em;
 }
 
-
 /*
  * Header
  */
+.spinner {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.spinner:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
