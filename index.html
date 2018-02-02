@@ -28,6 +28,24 @@
         -o-background-size: cover;
         background-size: cover;
       }
+      .sliding-middle-out {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 3px;
+      }
+      .sliding-middle-out:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+      }
+      .sliding-middle-out:hover:after {
+        width: 100%;
+        background: #DFDFDF;
+      }
     </style>
   </head>
 
@@ -53,10 +71,10 @@
         <div id="random_quote"></div>
         <hr id="animate_hr" style="width:0%; border-top: 2px solid #999;">
         <ul class="list-inline">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects 'n Fancy Stuff</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="sliding-middle-out" href="about.html">About Me</a></li>
+          <li><a class="sliding-middle-out" href="projects.html">Projects 'n Fancy Stuff</a></li>
+          <li><a class="sliding-middle-out" href="resume.html">Resume</a></li>
+          <li><a class="sliding-middle-out" href="contact.html">Contact</a></li>
         </ul>
       </main>
 
