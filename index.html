@@ -21,13 +21,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet">
 
     <style>
-      body {
-        background-image: url("img/toronto_background.jpg");
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
       .sliding-middle-out {
         display: inline-block;
         position: relative;
@@ -47,6 +40,14 @@
         background: #DFDFDF;
       }
     </style>
+
+    <!-- jQuery script to reuse footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#footer').load('footer.html')
+      });
+    </script>
   </head>
 
   <body class="text-center">
@@ -55,7 +56,7 @@
       <header class="masthead mb-auto">
         <div class="inner">
           <img src="img/gol_glider_full.png" class="masthead-logo spinner" title="Game of Life glider"></img>
-          <h3 class="masthead-brand">Jeffrey Li</h3>
+          <h3 class="masthead-brand" href="index.html">Jeffrey Li</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active">Home</a>
             <a class="nav-link" href="about.html">About</a>
@@ -77,18 +78,9 @@
           <li><a class="sliding-middle-out" href="contact.html">Contact</a></li>
         </ul>
       </main>
-
+      
       <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <ul class="list-inline">
-            <li><a class="icon-social-facebook" href="https://www.facebook.com/jeffreylyj98/"></a></li>
-            <li><a class="icon-social-github" href="https://github.com/privatejfx141/"></a></li>
-            <li><a class="icon-social-google" href="https://plus.google.com/110975621771482109077"></a></li>
-            <li><a class="icon-social-linkedin" href="https://www.linkedin.com/in/jeffreylyj98"></a></li>
-            <li><a class="icon-social-steam" href="http://steamcommunity.com/id/jfx/"></a></li>
-            <li><a class="icon-social-youtube" href="https://www.youtube.com/user/privatejfx1412/"></a></li>
-          </ul>
-        </div>
+        <div id="footer"></div>
       </footer>
     </div>
 

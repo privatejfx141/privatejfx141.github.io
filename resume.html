@@ -20,33 +20,13 @@
     <!-- Custom characters for social media links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
-    <style>
-      body {
-        background-image: url("img/toronto_background.jpg");
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-      .sliding-middle-out {
-        display: inline-block;
-        position: relative;
-        padding-bottom: 3px;
-      }
-      .sliding-middle-out:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0px;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-      }
-      .sliding-middle-out:hover:after {
-        width: 100%;
-        background: #DFDFDF;
-      }
-    </style>
+    <!-- jQuery script to reuse footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#footer').load('footer.html')
+      });
+    </script>
   </head>
 
   <body class="text-center">
@@ -54,7 +34,7 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="width:100%;">
       <header class="masthead mb-auto">
         <div class="inner">
-          <img src="img/gol_glider_full.png" class="masthead-logo"></img>
+          <img src="img/gol_glider_full.png" class="masthead-logo spinner"></img>
           <h3 class="masthead-brand">Jeffrey Li</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/">Home</a>
@@ -71,16 +51,7 @@
       </main>
 
       <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <ul class="list-inline">
-            <li><a class="icon-social-facebook" href="https://www.facebook.com/jeffreylyj98/"></a></li>
-            <li><a class="icon-social-github" href="https://github.com/privatejfx141/"></a></li>
-            <li><a class="icon-social-google" href="https://plus.google.com/110975621771482109077"></a></li>
-            <li><a class="icon-social-linkedin" href="https://www.linkedin.com/in/jeffreylyj98"></a></li>
-            <li><a class="icon-social-steam" href="http://steamcommunity.com/id/jfx/"></a></li>
-            <li><a class="icon-social-youtube" href="https://www.youtube.com/user/privatejfx1412/"></a></li>
-          </ul>
-        </div>
+        <div id="footer"></div>
       </footer>
     </div>
 
