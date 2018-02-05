@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(function() {
+        $('#brand').load('brand.html')
         $('#footer').load('footer.html')
       });
     </script>
@@ -34,7 +35,7 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="width:100%;">
       <header class="masthead mb-auto">
         <div class="inner">
-          <img src="img/gol_glider_full.png" class="masthead-logo spinner"></img>
+          <div id="brand"></div>
           <h3 class="masthead-brand">Jeffrey Li</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/">Home</a>
