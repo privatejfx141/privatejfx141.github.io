@@ -79,4 +79,10 @@ window.onload = (function () {
     `;
     document.getElementById("rndquote").appendChild(blockquote);
 
+    // rare name easter egg :P
+    if (Math.floor((Math.random() * 23) + 1) == 1) {
+        document.getElementById("portfolio-title").innerText = "李赟杰";
+        document.getElementById("my-name").innerText = "Yun Jie Li";
+    }
+
 }());
