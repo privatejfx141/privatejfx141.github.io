@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="author" content="Jeffrey Li">
     <meta charset="UTF-8">
@@ -11,86 +13,128 @@
     <link rel="icon" href="favicon.ico">
     <title>Jeffrey Li</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+<body>
+    <div class="panel-container">
+        <div class="side-panel">
+            <img id="logo" src="media/gol_glider.png" title="Game of Life glider"></img>
+            <h1>Jeffrey Li</h1>
 
-    <!-- Custom characters for social media links -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet">
+            <div id="rndquote"></div>
 
-    <style>
-      .sliding-middle-out {
-        display: inline-block;
-        position: relative;
-        padding-bottom: 3px;
-      }
-      .sliding-middle-out:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0px;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-      }
-      .sliding-middle-out:hover:after {
-        width: 100%;
-        background: #DFDFDF;
-      }
-    </style>
+            <hr>
 
-    <!-- jQuery script to reuse footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(function() {
-        $('#brand').load('brand.html')
-        $('#footer').load('footer.html')
-      });
-    </script>
-  </head>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#school">School Notes</a></li>
+            </ul>
 
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="width:100%;">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <div id="brand"></div>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="resume.html">Resume</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </nav>
+            <span>
+                <a href="https://www.linkedin.com/in/jeffreylyj98/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/privatejfx141">
+                    <i class="fab fa-github"></i></a>
+                <a href="/resume.pdf"><i class="fas fa-file"></i></a>
+            </span>
         </div>
-      </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading" style="font-size:64px;">Jeffrey Li</h1>
-        <div id="random_quote"></div>
-        <hr id="animate_hr" style="width:0%; border-top: 2px solid #999;">
-        <ul class="list-inline">
-          <li><a class="sliding-middle-out" href="about.html">About Me</a></li>
-          <li><a class="sliding-middle-out" href="projects.html">Projects 'n Fancy Stuff</a></li>
-          <li><a class="sliding-middle-out" href="resume.html">Resume</a></li>
-          <li><a class="sliding-middle-out" href="contact.html">Contact</a></li>
-        </ul>
-      </main>
-      
-      <footer class="mastfoot mt-auto">
-        <div id="footer"></div>
-      </footer>
+        <div class="main-panel">
+            <div id="about" class="panel-content">
+                <h2 class="first panel-title">About Me</h2>
+
+                <p>Hello there! I'm Jeffrey Li. I am a third year computer science student at the University of
+                    Toronto, currently working towards an Honours Bachelors of Science in Software Engineering.</p>
+
+                <p>I have been passionate about computer science since middle school. I have participated in various
+                    coding challenges and hackathons, such as the ORBIS Challenge and RUHacks. I am proficient in many
+                    imperative programming languages, including Python, Java, C, and JavaScript. I have some working
+                    experience with the Bash shell and Microsoft PowerShell. I am also into using multimedia software,
+                    such as Sony Vegas Pro, Adobe Photoshop, and Audacity. I was formerly a member of CSEC, a
+                    student-run club at the University of Toronto centered around computer science. My past hobbies
+                    include wiki editing and making video game montages.</p>
+
+                <p>I hope to do my part in the Information Age!</p>
+            </div>
+
+            <div id="projects" class="panel-content">
+                <h2 class="second panel-title">Projects</h2>
+
+                <div class="project-content">
+                    <div class="project-title">TEQ-LIP Data Reporting Platform</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-database"></i> SQLite</li>
+                    </ul>
+                    <p class="project-desc">A Java-based data reporting application designed for the Toronto East
+                        Quadrant Local Immigration Partnership (TEQ-LIP) to centralize data collected from local
+                        immigration agencies in the Scarborough area, and generate reports and summaries for the
+                        partnership.</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-title">Needham-Schroeder Protocol CLI</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                    </ul>
+                    <p class="project-desc">A command-line interface for the Needham-Schroeder public-key protocol and
+                        its related MITM attack utilizing socket programming and RSA and AES from the Pycryptodome
+                        library. Docker was employed to simulate a network involving a basic file storage server, a
+                        malicious storage server, a naive client, and a public-key server.</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-title">Bundy Budgetting Application</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-css3-alt"></i> Materialize</li>
+                        <li><i class="fab fa-google"></i> Firebase</li>
+                    </ul>
+                    <p class="project-desc">A web service designed to help users in better managing their budget. The
+                        Materialize framework was used to develop the front end, while Firebase was used for back-end
+                        data storage and user authentication. (Built during THacks 2017)</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-title">SOLID Android Banking App</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-database"></i> SQLite</li>
+                        <li><i class="fab fa-android"></i> Android Studio</li>
+                    </ul>
+                    <p class="project-desc">A software application that mimics the basic features of a bank. User are
+                        able to create their own Savings or Chequing accounts, make transactions, and send messages to
+                        each other. The app was developed for both desktop and mobile Android platforms.</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-title">Conway's Game of Life</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-python"></i> Python</li>
+                    </ul>
+                    <p class="project-desc">A Python applet that simulates Conway's Game of Life, implemented using the
+                        Pygame module. Users can run a simulation, modify the generation speed, and set custom rules
+                        for a cell's birth and survival.</p>
+                </div>
+
+            </div>
+            <div id="school" class="panel-content">
+                <h2 class="third panel-title">School Notes</h2>
+
+                <p>At the moment, there's nothing here.</p>
+
+                <p>I might post some of my own school notes here from past courses I have taken at some point...</p>
+            </div>
+        </div>
+
     </div>
 
-    <script src="js/animate_hr.js"></script>
-    <script src="js/random_quote.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
 
-  </body>
 </html>
