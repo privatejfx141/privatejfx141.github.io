@@ -69,15 +69,20 @@ window.onload = (function () {
         }
     ];
 
-    let quote = quotes[Math.floor(Math.random() * quotes.length)];
-    let blockquote = document.createElement('blockquote');
-    blockquote.innerHTML = `
-        <p class="mb-0">${quote.text}</p>
-        <footer class="blockquote-footer">
-            ${quote.author}${(quote.cite) ? ', <cite>' + quote.cite + '</cite>' : ''}
-        </footer>
-    `;
-    document.getElementById("rndquote").appendChild(blockquote);
+    const refreshQuote = function () {
+        let quote = quotes[Math.floor(Math.random() * quotes.length)];
+        let blockquote = document.createElement('blockquote');
+        blockquote.innerHTML = `
+            <p class="mb-0">${quote.text}</p>
+            <footer class="blockquote-footer">
+                ${quote.author}${(quote.cite) ? ', <cite>' + quote.cite + '</cite>' : ''}
+            </footer>
+        `;
+        blockquote.addEventListener("click", function(evt) {
+            refreshQuote();
+        });
+        document.getElementById("rndquote").appendChild(blockquote);
+    }
 
     // rare name easter egg :P
     if (Math.floor((Math.random() * 23) + 1) == 1) {
