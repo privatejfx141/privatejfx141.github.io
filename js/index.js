@@ -70,6 +70,7 @@ window.onload = (function () {
     ];
 
     const refreshQuote = function () {
+        let quoteElmt = document.getElementById("rndquote");
         let quote = quotes[Math.floor(Math.random() * quotes.length)];
         let blockquote = document.createElement('blockquote');
         blockquote.innerHTML = `
@@ -81,7 +82,8 @@ window.onload = (function () {
         blockquote.addEventListener("click", function(evt) {
             refreshQuote();
         });
-        document.getElementById("rndquote").appendChild(blockquote);
+        quoteElmt.innerHTML = "";
+        quoteElmt.appendChild(blockquote);
     }
 
     // rare name easter egg :P
