@@ -84,7 +84,9 @@ window.onload = (function () {
         });
         quoteElmt.innerHTML = "";
         quoteElmt.appendChild(blockquote);
-    }
+    };
+
+    refreshQuote();
 
     // rare name easter egg :P
     if (Math.floor((Math.random() * 23) + 1) == 1) {
