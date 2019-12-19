@@ -285,7 +285,7 @@ a:hover {
     font-size: 16pt;
 }
 
-.project-desc {
+.project-desc, .experience-desc {
     clear: both;
     width: 100%;
     padding-left: 24pt;
@@ -304,6 +304,22 @@ a:hover {
 .languages li {
     margin: 4px;
     display: inline;
+}
+
+.experience-title {
+    font-size: 16pt;
+}
+
+.experience-position {
+    color: #1f618d;
+    float: left;
+    font-size: 10pt;
+}
+
+.experience-dates {
+    color: #1f618d;
+    float: right;
+    font-size: 10pt;
 }
 
 #rndquote {

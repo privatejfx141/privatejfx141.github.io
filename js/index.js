@@ -66,6 +66,10 @@ window.onload = (function () {
         {
             text: "Sorry, but I'm gonna eat while I work. My judgement goes fuzzy when I'm too hungry.",
             author: "Long Caster"
+        },
+        {
+            text: "Imagine it. Picture it. SALVATION!",
+            author: "Matias Torres"
         }
     ];
 

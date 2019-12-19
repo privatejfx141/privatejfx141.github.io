@@ -33,7 +33,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#school">School Notes</a></li>
+                <li><a href="#experience">Experiences</a></li>
             </ul>
 
             <span>
@@ -48,27 +48,36 @@
             <div id="about" class="panel-content">
                 <h2 class="first panel-title">About Me</h2>
 
+                <img class="about-pic" src="./images/jeffrey.jpg" alt="Jeffrey" width="200px" height="200px" style="float: right; margin:5px">
+
                 <p>Hello there! I'm <b id="my-name">Jeffrey Li</b>. I am a third year computer science student at the
                     University of
                     Toronto, currently working towards an Honours Bachelors of Science in Software Engineering.</p>
 
                 <p>I have been passionate about computer science since middle school. I have participated in various
                     coding challenges and hackathons, such as the ORBIS Challenge and RUHacks. I am proficient in many
-                    imperative programming languages, including Python, Java, C, and JavaScript. I have some working
+                    imperative programming languages, including <i class="fab fa-python"></i> Python, <i class="fab fa-java"></i> Java, <i class="fab fa-cuttlefish"></i> C, and <i class="fab fa-js"></i> JavaScript. I have some working
                     experience with the Bash shell and Microsoft PowerShell. I am also into using multimedia software,
                     such as Sony Vegas Pro, Adobe Photoshop, and Audacity. I was formerly a member of CSEC, a
                     student-run club at the University of Toronto centered around computer science. My past hobbies
-                    include wiki editing and making video montages.</p>
+                    include wiki editing, photoshopping and making video montages.</p>
 
-                <p>I am also a fan of video games. Anything relating to <i>Ace Combat</i>, <i>Command & Conquer</i>,
-                    <i>Gran Turismo</i>, <i>Half-Life</i>, <i>Killzone</i>, <i>Metal Gear Solid</i>, <i>Ratchet &
-                        Clank</i>, or <i>StarCraft</i>, I like.</p>
+                <p>I am also a fan of video games. Anything strategy or story-driven singleplayer games, I like.</p>
 
                 <p>I hope to do my part in the Information Age!</p>
             </div>
 
             <div id="projects" class="panel-content">
                 <h2 class="second panel-title">Projects</h2>
+
+                <div class="project-content">
+                    <div class="project-title">Collaborate Automation Deployment Project</div>
+                    <ul class="languages">
+                        <li><i class="fab fa-aws"></i> AWS</li>
+                        <li><i class="fab fa-jenkins"></i> Jenkins</li>
+                    </ul>
+                    <p class="project-desc">An automated CaseWare Cloud deployment pipeline developed in collaboration with the DevOps, Cloud Infrastructure, and Cloud Platform teams in CaseWare. The purpose of the project is to improve the reliability and security, and decrease the deployment time of Cloud servers. Ansible with Jenkins is used prominently throughout the pipeline.</p>
+                </div>
 
                 <div class="project-content">
                     <div class="project-title">TEQ-LIP Data Reporting Platform</div>
@@ -128,12 +137,56 @@
                 </div>
 
             </div>
-            <div id="school" class="panel-content">
-                <h2 class="third panel-title">School Notes</h2>
+            <div id="experience" class="panel-content">
+                <h2 class="third panel-title">Experiences</h2>
 
-                <p>At the moment, there's nothing here.</p>
+                <!-- CaseWare -->
+                <div class="experience-content">
+                    <div class="experience-title">CaseWare International Inc.</div>
+                    <div class="experience-position">DevOps Developer</div>
+                    <div class="experience-dates">May - December 2019</div>
+                    <ul class="experience-desc">
+                        <li>Served as primary on-call for DevOps-related inquires, such as investigating CI/CD bugs and deploying requested builds for end users.</li>
+                        <li>Improved upon CI/CD pipelines by developing automation for Collaborate deployments using Jenkins and Ansible.</li>
+                        <li>Improved environment rotation for Smart Engagement test servers.</li>
+                    </ul>
+                </div>
 
-                <p>I might post some of my own school notes here from past courses I have taken at some point...</p>
+                <!-- Ministry of Education -->
+                <div class="experience-content">
+                    <div class="experience-title">Ontario Ministry of Education</div>
+                    <div class="experience-position">IT Quality Assurance Tester</div>
+                    <div class="experience-dates">January - August 2018</div>
+                    <ul class="experience-desc">
+                        <li>Conducted smoke and regression tests on ministry web applications through HP ALM, reporting on defects and change requests to assigned SMEs and developers.</li>
+                        <li>Developed automated regression test suites for online ministry applications utilizing PL/SQL and UFT automation, ensuring full coverage of all business rules.</li>
+                        <li>Led development of a new Selenium-based automation framework coded in C# to replace the older UFT automation framework. </li>
+                    </ul>
+                </div>
+    
+                <!-- R3P2 -->
+                <div class="experience-content">
+                    <div class="experience-title">R3P2 - Riverdale Raiders Robotics</div>
+                    <div class="experience-position">Programmer & Social Media Manager</div>
+                    <div class="experience-dates">September 2015 - April 2017</div>
+                    <ul class="experience-desc">
+                        <li>Designed and assembled the ball receiver and throwing mechanisms of a 3D SOLIDWORKS model of the competition robot as a schematic for the physical construction by the build team.</li>
+                        <li>Tutored high school students on the basic syntax and coding styles of Java in preparation for the development of the robot’s control and autonomous systems.</li>
+                        <li>Recorded matches at the St. Louis World Championships.</li>
+                        <li>Organized and administrated team's Google Drive and YouTube channel.</li>
+                    </ul>
+                </div>
+    
+                <!-- TDSB -->
+                <div class="experience-content">
+                    <div class="experience-title">TDSB International Languages Program</div>
+                    <div class="experience-position">Teacher's Assistant</div>
+                    <div class="experience-dates">September 2012 - June 2015</div>
+                    <ul class="experience-desc">
+                        <li>Supervised after-school Mandarin classes, as part of the International Languages Program, from 3:00 to 5:00 PM.</li>
+                        <li>Worked with Mandarin language teacher to compile and organize student records.</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
