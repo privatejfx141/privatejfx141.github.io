@@ -267,6 +267,10 @@ a:hover {
     color: #5981ca;
 }
 
+#portfolio-title {
+    margin-top: 0.5em;
+}
+
 #logo {
     width: 64px;
     margin: 6px;
@@ -278,6 +282,16 @@ a:hover {
 #logo:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+}
+
+#glider-grid {
+    display: grid;
+    width: 56px;
+    height: 56px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    margin: auto;
+    grid-template-columns: auto auto auto;
 }
 
 .project-title {

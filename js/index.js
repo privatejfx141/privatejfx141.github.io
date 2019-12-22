@@ -1,7 +1,8 @@
 window.onload = (function () {
     "use strict";
 
-    let quotes = [{
+    let quotes = [
+        {
             text: "Hello pretty bird!",
             author: "Mr. Simoneau",
             cite: 'RCI ICS2U1'
@@ -73,6 +74,14 @@ window.onload = (function () {
         }
     ];
 
+    let gliderStates = [
+        [0, 0, 1, 1, 0, 1, 0, 1, 1],
+        [1, 0, 0, 0, 1, 1, 1, 1, 0],
+        [0, 1, 0, 0, 0, 1, 1, 1, 1],
+        [1, 0, 1, 0, 1, 1, 0, 1, 0]
+    ];
+    let currentState = 0;
+
     const refreshQuote = function () {
         let quoteElmt = document.getElementById("rndquote");
         let quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -89,8 +98,24 @@ window.onload = (function () {
         quoteElmt.innerHTML = "";
         quoteElmt.appendChild(blockquote);
     };
-
     refreshQuote();
+
+    const gliderAnimation = function () {
+        window.setInterval(() => {
+            let state = gliderStates[currentState];
+            for (let i = 0; i < 9; i++) {
+                let gridBoxId = "glider-grid-" + i;
+                let elmt = document.getElementById(gridBoxId);
+                if (state[i] === 1) {
+                    elmt.style.background = "#FFF";
+                } else {
+                    elmt.style.background = "";
+                }
+            } 
+            currentState = (currentState + 1) % 4;
+        }, 256);
+    };
+    gliderAnimation();
 
     // rare name easter egg :P
     if (Math.floor((Math.random() * 23) + 1) == 1) {
