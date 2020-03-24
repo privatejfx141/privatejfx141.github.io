@@ -1,7 +1,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-weight: 100;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -14,119 +13,59 @@ dt {
     line-height: 30px;
 }
 
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .panel-container>.main-panel {
-        width: 0% !important;
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    .project-title {
+        font-size: 3vw;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .panel-container {
+        flex-direction: column;
     }
 
     .panel-container>.side-panel {
-        text-align: center !important;
-        width: 100% !important;
-        background-size: auto !important;
+        padding: 0.5em 0 0.5em 0 !important;
     }
 
-    span {
-        letter-spacing: 10px;
-        font-size: 24px !important;
+    #portfolio-title {
+        margin: 0 !important;
     }
 
-    h1 {
-        font-size: 72px;
-    }
-}
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .panel-container>.main-panel {
-        width: 0% !important;
+    #navigation {
+        font-size: 12pt;
+        margin: 0;
     }
 
-    .panel-container>.side-panel {
-        text-align: center !important;
-        width: 100% !important;
-        background-size: 100% auto !important;
+    #links {
+        font-size: 12pt;
     }
 
-    span {
-        letter-spacing: 10px;
-        font-size: 24px !important;
-    }
-
-    h1 {
-        font-size: 72px;
+    #about-pic {
+        display: block;
+        margin: 0 auto 0.5em auto;
     }
 }
 
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
+/*  Desktops */
+@media (min-width: 768px) {
+    .panel-container {
+        flex-direction: row;
+    }
 
-@media (min-width: 481px) and (max-width: 767px) {
     .panel-container>.main-panel {
-        width: 0% !important;
-    }
-
-    .panel-container>.side-panel {
-        text-align: center !important;
-        width: 100% !important;
-        background-size: 100% auto !important;
-    }
-
-    span {
-        letter-spacing: 10px;
-        font-size: 24px !important;
-    }
-
-    h1 {
-        font-size: 72px;
-    }
-}
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .panel-container>.main-panel {
-        width: 0% !important;
-    }
-
-    .panel-container>.side-panel {
-        text-align: center !important;
-        width: 100% !important;
-        background-size: 100% auto !important;
-    }
-
-    span {
-        font-size: 24px !important;
-    }
-
-    h1 {
-        font-size: 130px;
-    }
-}
-
-/* Desktop/Laptop */
-
-/* 
-    ##Device = Desktops
-    ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-    .panel-container>.main-panel {
-        padding: 50px;
         width: 75%;
     }
 
@@ -143,35 +82,12 @@ dt {
     }
 
     span {
-        font-size: 24px !important;
-    }
-}
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .panel-container>.main-panel {
-        padding: 50px;
-        width: 75%;
+        font-size: 24px;
     }
 
-    .main-panel>.panel-content {
-        width: 100%;
-    }
-
-    .panel-container>.side-panel {
-        width: 650px;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-
-    span {
-        font-size: 24px !important;
+    #about-pic {
+        float: right;
+        margin: 5px;
     }
 }
 
@@ -190,6 +106,7 @@ dt {
     overflow: auto;
     font-family: "Roboto", sans-serif !important;
     font-weight: 300;
+    padding: 50px;
 }
 
 .panel-container>.side-panel {
@@ -197,10 +114,6 @@ dt {
     padding-top: 250px;
     text-align: center;
     background: #10174e;
-    background-image: url("bkg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto auto;
 }
 
 .side-panel hr {

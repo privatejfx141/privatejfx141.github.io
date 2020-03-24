@@ -23,7 +23,7 @@
 <body>
     <div class="panel-container">
         <div class="side-panel">
-            <div id="glider-grid">
+            <div id="glider-grid" class="hidden-mobile">
                 <div id="glider-grid-0"></div>
                 <div id="glider-grid-1"></div>
                 <div id="glider-grid-2"></div>
@@ -36,17 +36,17 @@
             </div>
             <h1 id="portfolio-title">Jeffrey Li</h1>
 
-            <div id="rndquote"></div>
+            <div id="rndquote" class="hidden-mobile"></div>
 
-            <hr>
+            <hr class="hidden-mobile">
 
-            <ul>
+            <ul id="navigation">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experiences</a></li>
             </ul>
 
-            <span>
+            <span id="links">
                 <a href="https://www.linkedin.com/in/jeffreylyj98/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/privatejfx141">
                     <i class="fab fa-github"></i></a>
@@ -58,7 +58,7 @@
             <div id="about" class="panel-content">
                 <h2 class="first panel-title">About Me</h2>
 
-                <img class="about-pic" src="./images/jeffrey.jpg" alt="Jeffrey" width="200px" height="200px" style="float: right; margin:5px">
+                <img id="about-pic" src="./images/jeffrey.jpg" alt="Jeffrey" width="200px" height="200px">
 
                 <p>Hello there! I'm <b id="my-name">Jeffrey Li</b>. I am a fourth year computer science student at the
                     University of
